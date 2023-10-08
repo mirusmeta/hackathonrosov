@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bg"
+    tools:context=".auth">
+    <ImageView
+        android:id="@+id/imgofsber"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/locker"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:text="Вход"
+        android:textSize="34sp"
+        android:textColor="@color/black"
+        android:id="@+id/welcometext"
+        android:lineHeight="46dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgofsber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Сдесь Вам нужно ввести данные,\nc Vometix аккаунт, чтобы войти"
+        android:textSize="18sp"
+        android:id="@+id/description"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/welcometext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Fieldcodeofmember"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Код пользователя"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:startIconDrawable="@drawable/usericon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textFieldcodeofmember"
+            android:layout_width="match_parent"
+            android:maxLength="6"
+            android:inputType="number"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Fieldpasscode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Пароль"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        app:startIconDrawable="@drawable/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Fieldcodeofmember">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textFieldpasscode"
+            android:layout_width="match_parent"
+            android:maxLength="8"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:background="@drawable/buttoncontinue"
+        android:textSize="22dp"
+        android:padding="12dp"
+        android:id="@+id/conbut"
+        android:text="Далее"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="40dp"
+        android:enabled="false"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

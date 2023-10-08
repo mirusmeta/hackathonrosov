@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1098774266881",
+    "project_id": "sberit-df089",
+    "storage_bucket": "sberit-df089.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098774266881:android:3403e2e205157c7a34ac00",
+        "android_client_info": {
+          "package_name": "pl.vometix.savchenkohackathon"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCf9CP_UkUfZ-LTbjqz8W3v9coZk-aNFAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
